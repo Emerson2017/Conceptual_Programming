@@ -1,0 +1,6 @@
+A função VAR_DUMP() geralmente é utilizada para imprimir variáveis na tela, facilitando os testes de variáveis em PHP.
+
+
+
+
+A função dd() é "um tipo" de VAR_DUMP só que melhorado, apresentando assim seu conteúdo de maneira mais organizada e limpa.
