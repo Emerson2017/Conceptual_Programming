@@ -1,0 +1,17 @@
+Como sabemos o elemento '\n' é muito usado no mundo de desenvolvimento com a finalidade de "quebrar" a linha ou pular
+para a próxima.
+
+
+Em sql não é diferente, segue alguns exemplos:
+
+
+UPDATE usuarios
+SET cnpj = '15119810/000139' '\n' '15119810/000139' '\n' '15119810/000139' 
+WHERE user_id = 8558;
+
+
+RESULTADO :
+
+15119810/000139
+15119810/000139
+15119810/000139
