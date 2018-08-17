@@ -1,0 +1,95 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.util.Scanner;
+public class Livro {
+    static Scanner leia = new Scanner(System.in);
+    
+    private String autor;
+    private String editora;
+    private int preco;
+    
+    
+    public Livro(){
+        this.autor = autor;
+        this.editora = editora;
+        this.preco = preco;
+    }
+    
+    public void setAutor(String autor){
+        this.autor = autor;
+    }
+    
+    public void setEditora(String editora){
+        this.editora = editora;
+    }
+    
+    public void setPreco(int preco){
+        this.preco = preco;
+    }
+    
+    public String getAutor(){
+        return this.autor;
+    }
+    
+    public String getEditora(){
+        return this.editora;
+    }
+    public int getPreco(){
+        return this.preco;
+    }
+            
+
+    public static void main(String[] args) {
+        Livro b;
+        b = new Livro();
+        
+        Livro c;
+        c = new Livro();
+        
+        String autor;
+        String editora;
+        int preco;
+        
+        System.out.println("Digite o nome do autor do livro 1: ");
+        autor = leia.nextLine();
+        System.out.println("Digite o nomo da editora do livro 1: ");
+        editora = leia.nextLine();
+        System.out.println("Digite o preço do livro 1: ");
+        preco = leia.nextInt();
+        
+        
+        b.setAutor(autor);
+        b.setEditora(editora);
+        b.setPreco(preco);
+        
+        System.out.println("Digite o nome do autor do livro 2: ");
+        autor = leia.nextLine();
+        System.out.println("Digite o nome da editora do livro 2: ");
+        editora = leia.nextLine();
+        System.out.println("Digite o preço do livro 2: ");
+        preco = leia.nextInt();
+        
+        
+        c.setAutor(autor);
+        c.setEditora(editora);
+        c.setPreco(preco);
+        
+        
+        System.out.println("O autor do livro 1 é: " + b.getAutor());
+        System.out.println("A editora do livro 1 é: " + b.getEditora());
+        System.out.println("O preço do livro 1 é: "+ b.getPreco());
+        
+        System.out.println("O autor do livro 2 é: " + c.getAutor());
+        System.out.println("A editora do livro 2 é: " + c.getEditora());
+        System.out.println("O preço do livro 2 é: "+ c.getPreco());
+        
+        
+     
+        
+    }
+    
+}
